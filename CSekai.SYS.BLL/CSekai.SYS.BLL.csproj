@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSekai.SYS.Entity\CSekai.SYS.Entity.csproj" />
+    <ProjectReference Include="..\CSekai.SYS.DAL\CSekai.SYS.DAL.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
