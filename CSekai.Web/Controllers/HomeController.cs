@@ -16,8 +16,8 @@ namespace CSekai.Web.Controllers
         {
 
             User user = new User();
-            user.UserName = "sekai5";
-            user.NickName = "世界5";
+            user.UserName = "sekai9";
+            user.NickName = "世界9";
             user.Pwd = "13579";
             user.Forbid = 0;
             UserBLL userBLL = new UserBLL();
