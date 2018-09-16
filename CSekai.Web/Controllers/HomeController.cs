@@ -29,7 +29,7 @@ namespace CSekai.Web.Controllers
             List<User> list = userBLL.GetUserList();
             foreach(User u in list)
             {
-                result += u.NickName+"<br/>";
+                result += u.UserName + u.NickName+"<br/>";
             }
             ViewData["result"] = result;
             return View();
