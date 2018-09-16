@@ -10,5 +10,9 @@ namespace CSekai.SYS.BLL
         public void AddUser(User user){
             dal.AddUser(user);
         }
+        public User GetUser(int id)
+        {
+            return dal.GetUser(id);
+        }
     }
 }

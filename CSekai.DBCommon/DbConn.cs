@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace CSekai.DBCommon
 {
@@ -11,6 +13,12 @@ namespace CSekai.DBCommon
                             + " User Id = fgedev; Password = fgedev;";
             connStr = "server=localhost;database=csekai;user=root;password=Aa123456;SslMode = none;";
             return connStr;    
+        }
+        public IDbConnection GetConnection()
+        {
+            IDbConnection conn = new MySqlConnection(GetConnectionString());
+            conn.Open();
+            return conn;
         }
     }
 }

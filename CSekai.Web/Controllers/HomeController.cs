@@ -14,14 +14,19 @@ namespace CSekai.Web.Controllers
     {
         public IActionResult Index()
         {
-
-            User user = new User();
-            user.UserName = "sekai9";
-            user.NickName = "世界9";
-            user.Pwd = "13579";
-            user.Forbid = 0;
             UserBLL userBLL = new UserBLL();
+            /*
+            User user = new User();
+            user.UserName = "sekai6";
+            user.NickName = "世界6";
+            user.Pwd = "666";
+            user.Forbid = 0;
+            
             userBLL.AddUser(user); 
+            */
+            string result = userBLL.GetUser(3).NickName;
+
+            ViewData["result"] = result;
             return View();
         }
 

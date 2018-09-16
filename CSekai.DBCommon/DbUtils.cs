@@ -1,22 +1,42 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
 using Dapper;
+using System.Data;
+using System.Collections.Generic;
 
 namespace CSekai.DBCommon
 {
     public class DbUtils
     {
-        public MySqlConnection GetConnection(){
-            return new MySqlConnection(new DbConn().GetConnectionString());
-        }
-        public void Execute(string sql, object param = null)
+
+        public int Execute(string sql, object param = null)
         {
-            using(MySqlConnection conn = GetConnection())
+            using(IDbConnection conn = new DbConn().GetConnection())
             {
-                conn.Open();
-                conn.Execute(sql,param);
-                conn.Close();
+                return conn.Execute(sql,param);
             }
         }
+        public T ExecuteScalar<T>(string sql, object param = null)
+        {
+            using (IDbConnection conn = new DbConn().GetConnection())
+            {
+                return conn.ExecuteScalar<T>(sql, param);
+            }
+        }
+        public T Query<T>(string sql, object param = null)
+        {
+            using (IDbConnection conn = new DbConn().GetConnection())
+            {
+                return conn.QuerySingleOrDefault<T>(sql, param);
+            }
+        }
+        public List<T> QueryList<T>(string sql, object param = null) 
+        {
+            using (IDbConnection conn = new DbConn().GetConnection())
+            {
+                return conn.Query<T>(sql, param).AsList();
+            }
+        }
+
     }
 }
