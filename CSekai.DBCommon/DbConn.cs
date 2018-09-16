@@ -19,13 +19,15 @@ namespace CSekai.DBCommon
         {
             return "mysql";
         }
-        
+
         public string GetConnectionString()
         {
             string connStr = null;
-            if (dbType.Equals(MYSQL)) {
+            if (dbType.Equals(MYSQL))
+            {
                 connStr = "server=localhost;database=csekai;user=root;password=Aa123456;SslMode = none;";
-            }else if (dbType.Equals(ORACLE))
+            }
+            else if (dbType.Equals(ORACLE))
             {
                 connStr = "Data Source = (DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)"
                             + "(HOST = 10.2.0.228)(PORT = 1521)))(CONNECT_DATA = (SERVICE_NAME = K3)));"
@@ -39,6 +41,6 @@ namespace CSekai.DBCommon
             conn.Open();
             return conn;
         }
-        
+
     }
 }

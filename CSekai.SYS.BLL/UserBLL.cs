@@ -1,6 +1,7 @@
 ﻿using System;
 using CSekai.SYS.Entity;
 using CSekai.SYS.DAL;
+using System.Collections.Generic;
 
 namespace CSekai.SYS.BLL
 {
@@ -13,6 +14,10 @@ namespace CSekai.SYS.BLL
         public User GetUser(int id)
         {
             return dal.GetUser(id);
+        }
+        public List<User> GetUserList()
+        {
+            return dal.GetUserList();
         }
     }
 }

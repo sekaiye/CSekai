@@ -24,8 +24,13 @@ namespace CSekai.Web.Controllers
             
             userBLL.AddUser(user); 
             */
-            string result = userBLL.GetUser(3).NickName;
 
+            string result = "";// userBLL.GetUser(3).NickName;
+            List<User> list = userBLL.GetUserList();
+            foreach(User u in list)
+            {
+                result += u.NickName+"<br/>";
+            }
             ViewData["result"] = result;
             return View();
         }
