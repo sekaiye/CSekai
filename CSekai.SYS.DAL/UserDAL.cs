@@ -32,10 +32,10 @@ namespace CSekai.SYS.DAL
             string sql = @"delete from sys_user where UserId=#:id";
             db.Execute(sql, id);
         }
-        public List<User> GetUserList()
+        public List<User> GetUserList(object param)
         {
-            string sql = "select * from sys_user";
-            return db.QueryList<User>(sql, null);
+            string sql = "select * from sys_user where UserName=#:UserName";
+            return db.QueryList<User>(sql, param);
         }
     }
 }

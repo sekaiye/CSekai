@@ -15,9 +15,9 @@ namespace CSekai.SYS.BLL
         {
             return dal.GetUser(id);
         }
-        public List<User> GetUserList()
+        public List<User> GetUserList(object param)
         {
-            return dal.GetUserList();
+            return dal.GetUserList(param);
         }
     }
 }

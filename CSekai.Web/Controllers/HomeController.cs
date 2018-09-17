@@ -26,7 +26,7 @@ namespace CSekai.Web.Controllers
             */
 
             string result = "";// userBLL.GetUser(3).NickName;
-            List<User> list = userBLL.GetUserList();
+            List<User> list = userBLL.GetUserList(new {UserName= "sekai3" });
             foreach(User u in list)
             {
                 result += u.UserName + u.NickName+"<br/>";

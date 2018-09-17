@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSekai.Web", "CSekai.Web\CSekai.Web.csproj", "{9EE70522-9FE7-4FEC-A1E2-7B8A8226D9DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSekai.Web", "CSekai.Web\CSekai.Web.csproj", "{9EE70522-9FE7-4FEC-A1E2-7B8A8226D9DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSekai.DBCommon", "CSekai.DBCommon\CSekai.DBCommon.csproj", "{3E900DE6-9452-4443-BDA4-CCFE263BD7BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSekai.DBCommon", "CSekai.DBCommon\CSekai.DBCommon.csproj", "{3E900DE6-9452-4443-BDA4-CCFE263BD7BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSekai.SYS.Entity", "CSekai.SYS.Entity\CSekai.SYS.Entity.csproj", "{F72FDE44-D7CF-46BA-8B97-C9D71AEE8941}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSekai.SYS.Entity", "CSekai.SYS.Entity\CSekai.SYS.Entity.csproj", "{F72FDE44-D7CF-46BA-8B97-C9D71AEE8941}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSekai.SYS.DAL", "CSekai.SYS.DAL\CSekai.SYS.DAL.csproj", "{17269C90-ADC6-4736-AF92-2F9CAE75AAB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSekai.SYS.DAL", "CSekai.SYS.DAL\CSekai.SYS.DAL.csproj", "{17269C90-ADC6-4736-AF92-2F9CAE75AAB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSekai.SYS.BLL", "CSekai.SYS.bll\CSekai.SYS.BLL.csproj", "{48AAED1E-6987-444D-9B54-921F0E78B714}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSekai.SYS.BLL", "CSekai.SYS.bll\CSekai.SYS.BLL.csproj", "{48AAED1E-6987-444D-9B54-921F0E78B714}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9EE70522-9FE7-4FEC-A1E2-7B8A8226D9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -86,5 +83,11 @@ Global
 		{48AAED1E-6987-444D-9B54-921F0E78B714}.Release|x64.Build.0 = Release|Any CPU
 		{48AAED1E-6987-444D-9B54-921F0E78B714}.Release|x86.ActiveCfg = Release|Any CPU
 		{48AAED1E-6987-444D-9B54-921F0E78B714}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E50A5354-8D25-41EC-8920-6525FD07C482}
 	EndGlobalSection
 EndGlobal
