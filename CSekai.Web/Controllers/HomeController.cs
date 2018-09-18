@@ -17,8 +17,8 @@ namespace CSekai.Web.Controllers
             UserBLL userBLL = new UserBLL();
             /*
             User user = new User();
-            user.UserName = "sekai6";
-            user.NickName = "世界6";
+            user.UserName = "sekai26";
+            user.NickName = "世界62";
             user.Pwd = "666";
             user.Forbid = 0;
             
